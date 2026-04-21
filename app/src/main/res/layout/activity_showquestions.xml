@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:background="@drawable/backimage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowquestionsActivity">
+
+    <ProgressBar
+        android:id="@+id/progress_circular"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:background="@android:color/transparent"
+        android:layout_height="match_parent"/>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/SkyBlue"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:layout_margin="10dp"
+        android:layout_marginStart="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/QuizTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:gravity="center_vertical"
+        android:text="@string/general_knowledge"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/icon"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Exit"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/x"
+        android:backgroundTint="@color/white"
+        android:gravity="center_vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/QuestNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingStart="5dp"
+        android:text="Q.1"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent">
+    </TextView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/SkyBlue"
+        />
+
+
+    <TextView
+        android:id="@+id/QuestionId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/white"
+        android:paddingStart="5dp"
+        android:text="@string/_1_what_is_the_capital_of_india"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent">
+    </TextView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/pinkColor"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kolkata"
+        android:paddingStart="2dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/roundshape"
+        android:id="@+id/option1" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hydrabad"
+        android:layout_margin="3dp"
+        android:paddingStart="2dp"
+        android:background="@drawable/roundshape"
+        android:id="@+id/option2" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bengluru"
+        android:layout_margin="3dp"
+        android:paddingStart="2dp"
+        android:background="@drawable/roundshape"
+        android:id="@+id/option3" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delhi"
+        android:layout_margin="3dp"
+        android:paddingStart="2dp"
+        android:background="@drawable/roundshape"
+        android:id="@+id/option4" />
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    android:orientation="horizontal">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:id="@+id/previous"
+        android:layout_margin="10dp"
+        android:background="@drawable/roundshape"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="Previous"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textColor="@color/white"
+        android:background="@drawable/roundshape"
+        android:id="@+id/Next"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="Next"/>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/card"
+        android:orientation="vertical"
+        android:background="@drawable/ic4"
+        app:cardCornerRadius="12dp">
+
+        <TextView
+            android:id="@+id/YourScore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your_Score"
+            android:textAlignment="center"
+            android:padding="12dp"
+            android:textColor="@color/green"
+            android:textSize="25dp"/>
+
+        <TextView
+            android:id="@+id/scoretext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="12dp"
+            android:text="10/20"
+            android:visibility="invisible"
+            android:textAlignment="center"
+            android:textColor="@color/green"
+            android:textSize="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time Left"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal"/>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="100dp" android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/Timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/SkyBlue"
+                android:drawableTop="@android:drawable/ic_lock_idle_alarm"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textSize="25sp"
+                android:text="00:00"
+                android:textAlignment="center"
+                android:textColor="@color/white" />
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+</LinearLayout>

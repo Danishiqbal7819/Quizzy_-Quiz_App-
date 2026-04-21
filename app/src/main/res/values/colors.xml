@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="green">#1FE60A</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="ffffff">#ffffff</color>
+    <color name="colorPrimary">#0A8EE6</color>
+    <color name="appcolor">#87A6F1</color>
+    <color name="pinkcolor">#298CF4</color>
+
+    <color name="SkyBlue">#467E85</color>
+    <color name="pinkColor">#DC86B6</color>
+</resources>
