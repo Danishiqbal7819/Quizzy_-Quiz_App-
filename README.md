@@ -23,15 +23,17 @@ This project is beginner-friendly and useful for learning Android development co
 
 ## 📱 Screenshots
 
-_Add your app screenshots here_
+<p align="center">
+  <img src="image1.jpg" alt="Home Screen" width="250" height="540"/>
+  <img src="image2.jpg" alt="Workout Screen" width="250" height="540"/>
+  <img src="image3.jpg" alt="Progress Screen" width="250" height="540"/>
+</p>
 
-Example:
+<p align="center">
+  <img src="image4.jpg" alt="Profile Screen" width="250" height="540"/>
+  <img src="image5.jpg" alt="Analytics Screen" width="250" height="540"/>
 
-![Quiz Screen](screenshots/quiz.png)
-
-![Result Screen](screenshots/result.png)
-
----
+</p>
 
 ## 🛠️ Built With
 
